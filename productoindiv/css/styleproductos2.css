@@ -1,0 +1,417 @@
+
+
+/*Estilos del producto de mezcal coco chico*/
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #F3FBFB 0%, rgba(243, 251, 251, 0.91) 100%);
+}
+
+nav {
+    background: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E5DCC8;
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background: #2D2427;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+ 
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: #2D2427;
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+
+
+
+
+.mezcalCafe
+{
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 700px;
+    width: 90%;
+
+    padding: 10px;
+  
+}
+.img_container
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo h2{
+   color: #2d2427;
+   font-weight: 300;
+   font-size: 64px;
+}
+.parrafo h3 ,.parrafo p{
+    color: #2d2427;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.container .img_container .main_img {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+
+
+/*Botones*/
+
+.botones2 .agregarc , .comprar
+{
+    width: 40%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 42px;
+    color: #E5DCC8;
+    background-color: #2D2427;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+}
+
+.boton 
+{
+    display: none;
+}
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1300px;
+	margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-card2{
+	width: 60%;
+	display: flex;
+	max-width: 1300px;
+	margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title-cards
+{
+    margin: auto;
+    width: 100%;
+	max-width: 1300px;
+    height: 160px;
+	
+	color: #2D2427;
+    line-height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+   
+
+    text-align: start;
+
+ 
+
+
+}
+.title-cards2
+{
+    margin: auto;
+    width: 100%;
+	max-width: 1300px;
+    height: 130px;
+	
+	color: #2D2427;
+    line-height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+ 
+
+    text-align: start;
+
+
+
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+  
+
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height:340px;
+  
+}
+.card .contenido-card{
+	padding: 15px;
+ 
+	
+}
+/* titulo de los productos */
+.card .contenido-card h3{
+	margin-bottom: 4px;
+	color: #2D2427;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    
+
+}
+.card .contenido-card p{
+	line-height: 28.13px;
+	color: #2D2427;
+	font-size: 18px;
+	margin-bottom: 3px;
+    font-family: 'Roboto';
+    font-weight: 300;
+
+ 
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 5px;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #2D2427;
+	border-radius: 2px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    background-color: #2D2427;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+/* Centrar */
+    display: flex;
+    justify-content: center;
+    
+}
+.container .thumbnail_container .thumbnail
+{
+    height: 200px;
+    width: 200px;
+}
+
+.container .thumbnail_container .thumbnail {
+  
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+}
+
+.container .thumbnail_container .thumbnail:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity:  1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+.thumbnail_container
+{
+    margin-left: 40px;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    max-width: 630px;
+}
+
+
+@media only screen and (min-width:220px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+    .container-card2{
+		flex-wrap: wrap;
+        width: 100%;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+@media (min-width: 220px) and (max-width: 418px)
+{
+    .title-cards2, .title-cards
+    {
+        font-size: 25px;
+    }
+}
+@media (min-width: 600px) and (max-width:970px)
+{
+    .container-card
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .container-card2
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+    .card
+    {
+        width: 90%;
+    }
+ 
+}
+/*Fin-Cards*/
+
+@media (max-width: 750px)
+{
+    .parrafo h2
+    {
+        font-size: 40px;
+    
+    }
+    .parrafo h3 , .parrafo p
+    {
+        font-size: 25px;
+    }
+    .mezcalCafe
+    {
+        grid-template-columns: 100%;
+        height: 100%;
+    }
+    .mezcalcf 
+    {
+        display: none;
+    }
+    .thumbnail_container
+    {
+        display: none;
+    }
+
+ 
+
+}
+
+@media (min-width: 501px) and (max-width:970px)
+{
+    .parrafo h2
+    {
+        font-size: 50px;
+    }
+    .parrafo h3, .parrafo p
+    {
+        font-size: 36px;
+    }
+    .contenedor2
+    {
+        display: none;
+    }
+    
+
+}
+

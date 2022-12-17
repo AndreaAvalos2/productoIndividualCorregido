@@ -1,0 +1,509 @@
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #F3FBFB 0%, rgba(243, 251, 251, 0.91) 100%);
+}
+
+
+
+/*Productos 
+.mezcalCafe
+{
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    heiht: 685px;
+    width: 90%;
+    background-color: blueviolet;
+    padding: 10px;
+    border: 3px solid black;
+    
+}
+.mezcal{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.main_img
+{
+    width: 80%;
+    height: 80%;     
+}
+.parrafo h2{
+   color: #2d2427;
+   font-weight: 300;
+   font-size: 64px;
+}
+.parrafo h3 ,.parrafo p{
+    color: #2d2427;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+}
+*/
+
+.mezcalCafe
+{
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 685px;
+    width: 90%;
+    background-color: blueviolet;
+    padding: 10px;
+    border: 3px solid black;
+}
+.img_container
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo h2{
+   color: #2d2427;
+   font-weight: 300;
+   font-size: 64px;
+}
+.parrafo h3 ,.parrafo p{
+    color: #2d2427;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+
+.container .img_container .main_img {
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+
+
+/*Botones*/
+.botones
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+.botones .agregarc 
+{
+    width: 55%;
+    height: 90px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 42px;
+    color: #E5DCC8;
+    background-color: #2D2427;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid yellow;
+}
+.botones .comprar
+{
+    width: 40%;
+    height: 90px;
+}
+
+.container .thumbnail_container .thumbnail
+{
+    height: 200px;
+    width: 200px;
+}
+
+.container .thumbnail_container .thumbnail {
+  
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+}
+
+.container .thumbnail_container .thumbnail:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity:  1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+.thumbnail_container
+{
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    max-width: 1320px;
+}
+
+
+
+
+
+
+/*Botones*/
+.agregarc , .comprar
+{
+    width: 95%;
+    height: 30%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 42px;
+    color: #E5DCC8;
+    background-color: #2D2427;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid yellow;
+}
+.botones
+{
+    width: 50%;
+}
+
+.boton
+{
+    display: none;
+}
+@media (max-width: 500px)
+{
+
+    .thumbnail_container
+    {
+        display: none;
+    }
+    .boton
+    {
+        display: block;
+        width: 92.5%;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 4px solid orange;
+    }
+   
+    .btn
+    {
+        margin-right: 20px;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 42px;
+        color: #E5DCC8;
+        background-color: #2D2427;
+        border: none;
+        cursor: pointer;
+        
+        border: 2px dotted yellow;
+    }
+    .btn2{
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 42px;
+        color: #E5DCC8;
+        background-color: #2D2427;
+        border: none;
+        cursor: pointer;
+       
+        border: 2px dotted yellow;
+
+    }
+}
+@media (max-width: 750px)
+{
+    .parrafo h2
+    {
+        font-size: 40px;
+    
+    }
+    .parrafo h3 , .parrafo p
+    {
+        font-size: 25px;
+    }
+    .mezcalCafe
+    {
+        grid-template-columns: 100%;
+        height: 100%;
+    }
+    .mezcalcf 
+    {
+        display: none;
+    }
+    .thumbnail_container
+    {
+        display: none;
+    }
+
+ 
+
+}
+
+@media (min-width: 501px) and (max-width:970px)
+{
+    .mezcal
+    {
+        width: 100%;
+        height: 80%;
+    }
+    #img
+    {
+        width: 90%;
+        height: 100%;     
+        margin-top: 30%;
+    }
+    .parrafo h2
+    {
+        font-size: 50px;
+    }
+    .parrafo h3, .parrafo p
+    {
+        font-size: 36px;
+    }
+    .contenedor2
+    {
+        display: none;
+    }
+    .boton
+    {
+        display: block;
+        margin:0 auto;
+        width: 94.4%;
+        border: 2px solid rosybrown;
+    }
+    .btn
+    {
+        margin-top: 10px;
+        width: 100%;
+        height: 60%;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 42px;
+        color: #E5DCC8;
+        background-color: #2D2427;
+        border: none;
+        cursor: pointer;
+
+        border: 2px dotted yellow;
+    }
+    .btn2{
+        width: 100%;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 42px;
+        color: #E5DCC8;
+        background-color: #2D2427;
+        border: none;
+        cursor: pointer;
+
+        border: 2px dotted yellow;
+
+    }
+
+}
+
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1300px;
+	margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+
+    border: 2px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title-cards
+{
+    margin: auto;
+    width: 100%;
+	max-width: 1300px;
+    height: 160px;
+	
+	color: #2D2427;
+    line-height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+   
+
+    text-align: start;
+
+    border: 2px solid green;
+
+
+}
+.title-cards2
+{
+    margin: auto;
+    width: 100%;
+	max-width: 1300px;
+    height: 130px;
+	
+	color: #2D2427;
+    line-height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+ 
+
+    text-align: start;
+
+    border: 2px solid green;
+
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+    border: 2px solid black;
+
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height:340px;
+    border: 2px solid palevioletred;
+}
+.card .contenido-card{
+	padding: 15px;
+    border: 2px solid blue;
+	
+}
+/* titulo de los productos */
+.card .contenido-card h3{
+	margin-bottom: 4px;
+	color: #2D2427;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.13px;
+    
+
+}
+.card .contenido-card p{
+	line-height: 28.13px;
+	color: #2D2427;
+	font-size: 18px;
+	margin-bottom: 3px;
+    font-family: 'Roboto';
+    font-weight: 300;
+
+    border: 2px solid brown;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 5px;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #2D2427;
+	border-radius: 2px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    background-color: #2D2427;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+
+/* Centrar */
+    display: flex;
+    justify-content: center;
+    
+}
+@media only screen and (min-width:220px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+@media (min-width: 220px) and (max-width: 418px)
+{
+    .title-cards2, .title-cards
+    {
+        font-size: 25px;
+    }
+}
+@media (min-width: 600px) and (max-width:970px)
+{
+    .container-card
+    {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .card
+    {
+        width: 90%;
+    }
+ 
+}
+/*Fin-Cards*/
+
+
+
+
+
+/* Estilos de la parte inferior*/
+footer
+{
+    width: 100%;
+    height: 75px;
+    background-color: #2D2427;
+
+}
+footer .face
+{
+    border-radius: 500px;
+    background: #E5DCC8;
+    height: 70px;
+    width: 70px;
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
